@@ -1,7 +1,9 @@
 import logo from '../static/assets/images/logo.svg';
 import '../static/assets/css/App.css';
+import { Button, Card, Container } from 'react-bootstrap';
 
-import button from "../components/button";
+
+import CustomCard from "../components/button";
 
 function App() {
   return (
@@ -20,6 +22,12 @@ function App() {
           Learn React
         </a>
       </header>
+      <CustomCard title="Featured Content">
+          <p>This is some featured text inside the CustomCard.</p>
+          <p>This seems to be the body text</p>
+          <p>This seems to be the body text</p>
+
+      </CustomCard>
     </div>
   );
 }

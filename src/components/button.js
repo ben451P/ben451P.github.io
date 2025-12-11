@@ -1,23 +1,16 @@
+// import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button, Card, Container } from 'react-bootstrap';
+// src/components/Card.jsx
 
-
-function button() {
+const CustomCard = ({ title, children }) => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="Custom">
+      <div className="card-body">
+        <h5 className="card-title">{title}</h5>
+        <div className="card-text">{children}</div>
+      </div>
     </div>
   );
-}
+};
 
-export default button;
+export default CustomCard;
