@@ -1,15 +1,25 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
-const MainNavbar =({}) => {
+const MainNavbar =() => {
     return (
-        <nav class="vertical-navbar fixed-top text-decoration-none text-reset">
-            <ul>
-                <li><a class="active text-danger text-decoration-none" href="#home">loremkjf;asdhlfkhjad;skfbdsf</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid px-5">
+                <a class="navbar-brand">Ben Lozzano</a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav d-flex justify-content-start">
+                    <li class="nav-item">
+                    <a class="nav-link active" href="#">Overview</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" href="#">Experiences</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" href="#">Personality and Hobbies</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
         </nav>
     )
 }
