@@ -9,6 +9,7 @@ function HobbiesPage() {
     return (
         <main role="main">
             <MainNavbar />
+            <br /><br />
 
             <ImgDesc
                 title="Magic the Gathering"

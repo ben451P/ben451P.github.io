@@ -105,7 +105,6 @@ function SearchPage() {
                     <ExperinceCards
                         experienceList={filteredResults}
                     />
-                    
                 </div>
             </div>
         </main>

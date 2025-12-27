@@ -12,6 +12,7 @@ function HomePage() {
   return (
     <main role="main">
       <MainNavbar />
+      <br /><br />
       <div className="container pt-5">
         <ImgDesc
           title="Benedetto Yifan Lozzano"

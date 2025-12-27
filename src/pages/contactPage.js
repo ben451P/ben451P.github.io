@@ -25,11 +25,11 @@ function ContactPage() {
                     <li className="mb-3">
                         <span className="fw-bold">Phone Number:</span> 201-702-9959
                     </li>
-                     <li className="mb-3">
-                        <span className="font-weight-bold">Phone Number:</span> 201-702-9959
+                    <li className="mb-3">
+                        <span className="fw-bold">Phone Number:</span> 201-702-9959
                     </li>
-                     <li className="mb-3">
-                        <span className="font-weight-bold">Phone Number:</span> 201-702-9959
+                    <li className="mb-3">
+                        <span className="fw-bold">Phone Number:</span> 201-702-9959
                     </li>
                 </ul>
                 
