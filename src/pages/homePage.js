@@ -5,8 +5,6 @@ import '../static/assets/css/main.css';
 
 
 import MainNavbar from '../components/mainNavbar';
-import SkillCard from '../components/skillCard';
-import Carousel from '../components/carosel';
 import SkillCardDisplay from '../components/skillCardDisplay';
 import ImgDesc from '../components/imgDesc';
 
@@ -31,7 +29,7 @@ function HomePage() {
           </div>
         </div>
        
-        <SkillCardDisplay></SkillCardDisplay>
+        <SkillCardDisplay />
 
 
         <div className="row mt-3 d-flex justify-content-between align-items-center">
