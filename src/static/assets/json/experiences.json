@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "React Portfolio",
+    "description": "My personal site built with React + Bootstrap, showcases projects and writings.",
+    "type": "Personal Project",
+    "languages": ["JavaScript", "React"],
+    "fields": ["Web Development", "UI"],
+    "date": "2025"
+  },
+  {
+    "id": 2,
+    "title": "Scheduling App (Flask)",
+    "description": "Scheduling and calendar system with tutor/student roles and modals.",
+    "type": "Personal Project",
+    "languages": ["Python", "Flask", "JavaScript"],
+    "fields": ["Web Development", "Tools"],
+    "date": "2025-02-12"
+  },
+  {
+    "id": 3,
+    "title": "GAT Image Classifier",
+    "description": "Converted images to graphs and trained a GAT to classify image types.",
+    "type": "Research",
+    "languages": ["Python", "PyTorch"],
+    "fields": ["Machine Learning", "Computer Vision", "Research"],
+    "date": "2024-11-08"
+  },
+  {
+    "id": 4,
+    "title": "Summer ML Internship",
+    "description": "Internship focusing on model pipelines and deployment.",
+    "type": "Internship",
+    "languages": ["Python"],
+    "fields": ["Machine Learning", "Data Science"],
+    "date": "2024-07-15"
+  },
+  {
+    "id": 5,
+    "title": "ICPC Regional Award",
+    "description": "Awarded 2nd place at regional programming contest (50 teams).",
+    "type": "Award",
+    "languages": ["C++", "Java"],
+    "fields": ["Algorithms", "Competitive Programming"],
+    "date": "2023-12-05"
+  }
+]
