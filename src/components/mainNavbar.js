@@ -1,11 +1,12 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import mainStyle from "../static/assets/css/main.module.css"
 
 const MainNavbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <nav className={`navbar navbar-expand-lg fixed-top ${mainStyle.componentTertiary}`}>
         <div className="container-fluid px-3 px-lg-5">
-            <a className="navbar-brand" href="/">Ben Lozzano</a>
+            <a className="navbar-brand text-light" href="/">Ben Lozzano</a>
             
             {/* Hamburger button for mobile */}
                 <button 
@@ -23,16 +24,16 @@ const MainNavbar = () => {
                 <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav me-auto">
                     <li className="nav-item">
-                        <a className="nav-link" href="/">Overview</a>
+                        <a className="nav-link text-light" href="/">Overview</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="/search">Experiences</a>
+                        <a className="nav-link text-light" href="/search">Experiences</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="/hobbies">Hobbies</a>
+                        <a className="nav-link text-light" href="/hobbies">Hobbies</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="/contact">Contact</a>
+                        <a className="nav-link text-light" href="/contact">Contact</a>
                     </li>
                 </ul>
             
@@ -40,7 +41,7 @@ const MainNavbar = () => {
                 <ul className="navbar-nav ms-auto">
                     <li className="nav-item">
                         <a 
-                            className="nav-link" 
+                            className="nav-link text-light" 
                             href="/resume" 
                             target="_blank"
                             rel="noopener noreferrer"

@@ -1,16 +1,16 @@
 import logo from '../static/assets/images/logo.svg';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import '../static/assets/css/main.css';
-
+import mainStyle from '../static/assets/css/main.module.css'
 
 import MainNavbar from '../components/mainNavbar';
 import SkillCardDisplay from '../components/skillCardDisplay';
 import ImgDesc from '../components/imgDesc';
+import MainFooter from '../components/footer';
 
 function HomePage() {
   return (
-    <main role="main">
+    <main role="main" className={mainStyle.componentPrimary}>
       <MainNavbar />
       <br /><br />
       <div className="container pt-5">
@@ -33,7 +33,7 @@ function HomePage() {
         <SkillCardDisplay />
 
 
-        <div className="row mt-3 d-flex justify-content-between align-items-center">
+        <div className="row my-5 d-flex justify-content-between align-items-center">
           <div className="col-8">
             <div className="h1">
               Experiences
@@ -52,6 +52,7 @@ function HomePage() {
           </div>
         </div>        
       </div>
+      <MainFooter />
     </main>
   );
 }

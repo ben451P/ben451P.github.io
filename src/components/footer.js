@@ -1,11 +1,11 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import mainStyle from "../static/assets/css/main.module.css"
 
-
-export default function MainFooter() {
+const MainFooter = () => {
     return (
-        <footer className="bg-dark text-light py-4 mt-auto">
+        <footer className={`${mainStyle.componentTertiary} text-light py-4 mt-auto`}>
             <div className="container">
                 <div className="row align-items-center text-center text-md-start">
                     <div className="col-12 mb-3 mb-md-0 text-center">
@@ -39,3 +39,5 @@ export default function MainFooter() {
         </footer>
     );
 };
+
+export default MainFooter

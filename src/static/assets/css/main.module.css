@@ -1,0 +1,19 @@
+.component{
+  background-color: #525252 !important;
+  color: red;
+}
+
+.componentPrimary {
+  background-color: #525252;
+  color: white;
+}
+
+.componentSecondary {
+  background-color: #727272;
+  color: black;
+}
+
+.componentTertiary {
+  background-color: #424242;
+  color: white;
+}
