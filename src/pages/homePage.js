@@ -44,7 +44,7 @@ function HomePage() {
             </div>
             <div className="col-5">
             <a href="/search" className="h-2 text-reset text-decoration-none">
-                <div className="btn btn-primary py-2 px-3">       
+                <div className={`btn py-2 px-3 ${mainStyle.componentTertiary}`}>       
                     View All Experiences →   
                 </div>
               </a>

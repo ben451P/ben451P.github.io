@@ -9,11 +9,15 @@
 }
 
 .componentSecondary {
-  background-color: #727272;
-  color: black;
+  background-color: #424242;
+  color: #6290C8;
 }
 
 .componentTertiary {
-  background-color: #424242;
-  color: white;
+  background-color: #829CBC;
+  color: #E2FCEF;;
+}
+
+.custom-muted{
+  color: #E2FCEF;
 }

@@ -5,7 +5,7 @@ import mainStyle from "../static/assets/css/main.module.css"
 
 const MainFooter = () => {
     return (
-        <footer className={`${mainStyle.componentTertiary} text-light py-4 mt-auto`}>
+        <footer className={`${mainStyle.componentSecondary} text-light py-4 mt-auto`}>
             <div className="container">
                 <div className="row align-items-center text-center text-md-start">
                     <div className="col-12 mb-3 mb-md-0 text-center">

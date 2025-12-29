@@ -6,7 +6,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 const ImgDesc = ({title, logo, imgSide = "right", children}) => {
     return (
-        <div className="row px-5 py-4 border border-danger align-items-center">
+        <div className="row px-5 py-4 align-items-center">
             {imgSide === "left" &&
               <div className="col-5">
                 <img src={logo} alt="" className="img-fluid"/>

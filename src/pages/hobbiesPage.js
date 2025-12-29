@@ -1,13 +1,14 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import logo from '../static/assets/images/logo.svg';
+import mainStyle from '../static/assets/css/main.module.css'
 
 import MainNavbar from "../components/mainNavbar";
 import ImgDesc from "../components/imgDesc";
 
 function HobbiesPage() {
     return (
-        <main role="main">
+        <main role="main" className={mainStyle.componentPrimary}>
             <MainNavbar />
             <br /><br />
 
