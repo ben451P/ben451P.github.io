@@ -4,6 +4,7 @@ import logo from '../static/assets/images/logo.svg';
 import mainStyle from '../static/assets/css/main.module.css'
 
 import MainNavbar from "../components/mainNavbar";
+import MainFooter from "../components/footer";
 import ImgDesc from "../components/imgDesc";
 
 function HobbiesPage() {
@@ -33,6 +34,7 @@ function HobbiesPage() {
                 Repudiandae, minus sapiente corporis velit omnis fugiat pariatur ipsum veniam quo est necessitatibus laborum nihil perspiciatis a ab tempore facere nam adipisci recusandae laboriosam provident. Provident doloremque nihil aliquid vitae.
                 Provident, voluptas fuga consequuntur iste veniam in molestiae laborum dolorum cumque accusantium dignissimos velit hic quod beatae fugiat suscipit nam quibusdam repellat facere rem expedita ipsum eum eius est? Dolores.
             </ImgDesc>
+            <MainFooter />
         </main>
     );
 }

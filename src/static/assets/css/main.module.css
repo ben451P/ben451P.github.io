@@ -21,3 +21,30 @@
 .custom-muted{
   color: #E2FCEF;
 }
+
+.badgePrimary{
+  background-color: #3186ee;
+}
+
+.badgeSecondary {
+  background-color: #6290C8;
+}
+
+.searchBar{
+  background-color: #829CBC;
+  border-color: #E2FCEF;
+  caret-color: #E2FCEF;
+  color: #E2FCEF
+}
+
+.searchBar::placeholder { /* Standard syntax */
+    color: #E2FCEF;
+}
+
+.searchBar::value { /* Standard syntax */
+    color: #E2FCEF;
+}
+
+.searchBar:focus {
+  background-color: #75a7e5;
+}

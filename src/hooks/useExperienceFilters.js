@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useMemo, useState, useEffect } from "react";
 
 const MAJOR_LANGUAGES = [
   "JavaScript",
@@ -13,9 +13,9 @@ const MAJOR_LANGUAGES = [
 ];
 
 const ALLOWED_TYPES = [
-  "Personal Project",
   "Internship",
   "Research",
+  "Personal Project",
   "Award",
 ];
 
@@ -69,8 +69,8 @@ export default function useExperienceFilters(items) {
           it.title,
           it.description,
           it.type,
-          ...(it.languages || []),
-          ...(it.fields || []),
+          ...it.languages,
+          ...it.fields,
         ]
           .join(" ")
           .toLowerCase();
@@ -101,6 +101,34 @@ export default function useExperienceFilters(items) {
     return filtered;
   }, [items, query, selectedTypes, selectedLangs, selectedFields]);
 
+  useEffect(() => {
+    console.log("s");
+    const searchParamsStr = sessionStorage.getItem("searchParams");
+    
+    if (!searchParamsStr) return;
+    
+    const searchParams = JSON.parse(searchParamsStr);
+    console.log(searchParams);
+    
+    // Check if array has elements
+    if (searchParams.Types && searchParams.Types.length > 0) {
+      setSelectedTypes(new Set(searchParams.Types)); // Convert array to Set
+    }
+    
+    if (searchParams.Languages && searchParams.Languages.length > 0) {
+      // If Languages is array of objects: [{text: "Java"}]
+      const langs = searchParams.Languages.map(lang => lang.text || lang);
+      setSelectedLangs(new Set(langs));
+    }
+    
+    if (searchParams.Fields && searchParams.Fields.length > 0) {
+      setSelectedFields(new Set(searchParams.Fields));
+    }
+    
+    if (searchParams.query) {
+      setQuery(searchParams.query);
+    }
+  }, []);
   const clearAll = () => {
     setQuery("");
     setSelectedFields(new Set());

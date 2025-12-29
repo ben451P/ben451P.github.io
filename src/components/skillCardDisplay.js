@@ -1,4 +1,3 @@
-
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import logo from '../static/assets/images/logo.svg';
@@ -28,7 +27,8 @@ const SkillCardDisplay = () => {
 
 function SkillCard({text, logo, numExperiences}){
     return (
-        <a href="" className="text-decoration-none text-reset">
+        <a href="/search" className="text-decoration-none text-reset" 
+        onClick={() => {sessionStorage.setItem("searchParams",JSON.stringify({"Types":[],"Languages":[text],"Fields":[]}))}}>
             <div className={`card ${mainStyle.componentTertiary}`}>
                 <div className="card-header">
                     <div className="d-flex justify-content-between align-items-center mb-2">
