@@ -100,5 +100,25 @@
     "links": {
       "github": ""
     }
+  },
+  {
+    "id": "jame_scholar_Fall_2025",
+    "title": "EdNet Dataset Exploration",
+    "subheading": "Urbana-Champaign, IL",
+    "type": "Honors Project",
+    "languages": ["Python"],
+    "fields": ["Data Analysis"],
+    "description": "Explored the EdNet dataset as part of a James Scholars project, expanding on skills used in class",
+    "bullet_points": [
+      "Utilized Pandas to perform data cleaning in order to use dataset to answer a targetted question of interest",
+      "Applied Sklearn and Statsmodels regression algorithms to check for relationships between variabls of interest",
+      "Created an briefly summarized insights page, along with detailed documentation for the work"
+    ],
+    "date": "Sep 2025 to Dec 2025",
+    "affiliation": "None",
+    "frameworks_used": ["Pandas", "Statsmodels", "Scikit Learn"],
+    "links": {
+      "github": "https://github.com/ben451P/stat207_JS_Project"
+    }
   }
 ]

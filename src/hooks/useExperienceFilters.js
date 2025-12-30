@@ -3,7 +3,7 @@ import { useMemo, useState, useEffect } from "react";
 const ALLOWED_TYPES = [
   "Internship",
   "Research",
-  "Personal Project",
+  "Project",
   "Award",
 ];
 
@@ -64,7 +64,13 @@ export default function useExperienceFilters(items) {
           .toLowerCase();
 
         if (q && !hay.includes(q)) return null;
-        if (selectedTypes.size > 0 && !selectedTypes.has(it.type)) return null;
+        if (selectedTypes.size > 0) {
+          const hasMatch = Array.from(selectedTypes).some((sel) =>
+            ALLOWED_TYPES.some((allowed) => it.type.includes(sel))
+          );
+          if (!hasMatch) return null;
+        }
+
 
         if (selectedLangs.size > 0) {
           const ok = (it.languages || []).some((l) => selectedLangs.has(l));
