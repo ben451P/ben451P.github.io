@@ -6,7 +6,7 @@ const MainNavbar = () => {
   return (
     <nav className={`navbar navbar-expand-lg fixed-top ${mainStyle.componentSecondary}`}>
         <div className="container-fluid px-3 px-lg-5">
-            <a className={`navbar-brand ${mainStyle.componentSecondary}`} href="/">Ben Lozzano</a>
+            <a className={`navbar-brand ${mainStyle.componentSecondary}`} href="/#/">Ben Lozzano</a>
             
             {/* Hamburger button for mobile */}
                 <button 
@@ -24,16 +24,16 @@ const MainNavbar = () => {
                 <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav me-auto">
                     <li className="nav-item">
-                        <a className={`nav-link ${mainStyle.componentSecondary}`} href="/">Overview</a>
+                        <a className={`nav-link ${mainStyle.componentSecondary}`} href="/#/">Overview</a>
                     </li>
                     <li className="nav-item">
-                        <a className={`nav-link ${mainStyle.componentSecondary}`} href="/search">Experiences</a>
+                        <a className={`nav-link ${mainStyle.componentSecondary}`} href="/#/search">Experiences</a>
                     </li>
                     {/* <li className="nav-item">
-                        <a className={`nav-link ${mainStyle.componentSecondary}`} href="/hobbies">Hobbies</a>
+                        <a className={`nav-link ${mainStyle.componentSecondary}`} href="/#/hobbies">Hobbies</a>
                     </li> */}
                     <li className="nav-item">
-                        <a className={`nav-link ${mainStyle.componentSecondary}`} href="/contact">Contact</a>
+                        <a className={`nav-link ${mainStyle.componentSecondary}`} href="/#/contact">Contact</a>
                     </li>
                 </ul>
             

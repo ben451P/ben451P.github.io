@@ -40,7 +40,7 @@ const SkillCardDisplay = () => {
 function SkillCard({ text, logo }) {
   return (
     <a
-      href="/search"
+      href="/#/search"
       className="text-decoration-none text-reset"
       onClick={() => {
         sessionStorage.setItem(
