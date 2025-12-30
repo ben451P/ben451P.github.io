@@ -39,7 +39,7 @@ function SearchPage() {
                         <input
                           className={`form-control ${mainStyle.searchBar}`}
                           type="search"
-                          placeholder="Search experiences, titles, descriptions..."
+                          placeholder="Search for specifics (tools, libraries, etc.)"
                           aria-label="Search"
                           value={query}
                           onChange={(e) => setQuery(e.target.value)}
@@ -48,12 +48,13 @@ function SearchPage() {
 
                     <div className="col-auto">
                         <button
-                          className="btn btn-outline-primary"
-                          type="button"
-                          onClick={() => setQuery("")}
+                        className={`btn ${mainStyle.filterBtn}`}
+                        type="button"
+                        onClick={() => setQuery("")}
                         >
-                            Clear
+                        Clear
                         </button>
+
                     </div>
 
                     <div className="col-12 mt-2">
@@ -83,12 +84,12 @@ function SearchPage() {
                             />
 
                             <div className="ms-auto">
-                                <button 
-                                  className="btn btn-sm btn-outline-secondary" 
-                                  type="button" 
-                                  onClick={clearAll}
+                                <button
+                                className={`btn btn-sm ${mainStyle.filterBtnActive}`}
+                                type="button"
+                                onClick={clearAll}
                                 >
-                                    Reset
+                                Reset
                                 </button>
                             </div>
                         </div>

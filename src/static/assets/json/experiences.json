@@ -1,47 +1,104 @@
 [
   {
-    "id": 1,
-    "title": "React Portfolio",
-    "description": "My personal site built with React + Bootstrap, showcases projects and writings.",
-    "type": "Personal Project",
-    "languages": ["JavaScript", "React"],
-    "fields": ["Web Development", "UI"],
-    "date": "2025"
-  },
-  {
-    "id": 2,
-    "title": "Scheduling App (Flask)",
-    "description": "Scheduling and calendar system with tutor/student roles and modals.",
-    "type": "Personal Project",
-    "languages": ["Python", "Flask", "JavaScript"],
-    "fields": ["Web Development", "Tools"],
-    "date": "2025-02-12"
-  },
-  {
-    "id": 3,
-    "title": "GAT Image Classifier",
-    "description": "Converted images to graphs and trained a GAT to classify image types.",
+    "id": "ml_research_fd",
+    "title": "Machine Learning Research Assistant",
+    "subheading": "Fairleigh Dickinson University · Teaneck, NJ",
     "type": "Research",
-    "languages": ["Python", "PyTorch"],
-    "fields": ["Machine Learning", "Computer Vision", "Research"],
-    "date": "2024-11-08"
+    "languages": ["Python"],
+    "fields": ["Computer Vision", "Graph Neural Networks", "Machine Learning"],
+    "description": "Conducted research comparing image segmentation algorithms and graph-based neural networks.",
+    "bullet_points": [
+      "Compared image segmentation algorithms on maize leaf lesions and evaluated image-to-graph conversion approaches.",
+      "Built and trained GNNs using PyTorch Geometric on augmented datasets to compare against CNN baselines.",
+      "Implemented custom attention aggregation in Graph Attention Networks and benchmarked results."
+    ],
+    "date": "Jun 2024 to Nov 2025",
+    "affiliation": "Fairleigh Dickinson University",
+    "frameworks_used": ["PyTorch", "PyTorch Geometric", "OpenCV"],
+    "links": {
+      "github": "",
+      "paper": ""
+    }
   },
   {
-    "id": 4,
-    "title": "Summer ML Internship",
-    "description": "Internship focusing on model pipelines and deployment.",
+    "id": "beiersdorf_intern",
+    "title": "Data Science / Software Developer Intern",
+    "subheading": "Beiersdorf · Florham Park, NJ",
     "type": "Internship",
     "languages": ["Python"],
-    "fields": ["Machine Learning", "Data Science"],
-    "date": "2024-07-15"
+    "fields": ["Data Science", "Computer Vision", "UI Development"],
+    "description": "Built an interactive image analysis tool to quantify skin hyperpigmentation aiding product research.",
+    "bullet_points": [
+      "Designed and implemented a GUI using Matplotlib + Tkinter for interactive image review and measurement.",
+      "Integrated MediaPipe for facial landmarks and improved throughput using Python threading.",
+      "Packaged modular analysis scripts for handoff to product teams and presented outcomes to stakeholders."
+    ],
+    "date": "Oct 2024 to Jun 2025",
+    "affiliation": "Beiersdorf",
+    "frameworks_used": ["Matplotlib", "Tkinter", "MediaPipe"],
+    "links": {
+      "github": ""
+    }
   },
   {
-    "id": 5,
-    "title": "ICPC Regional Award",
-    "description": "Awarded 2nd place at regional programming contest (50 teams).",
+    "id": "sigaida_project",
+    "title": "Skin Disease Identifier Application (Team Lead)",
+    "subheading": "SIGAIDA at UIUC · Urbana-Champaign, IL",
+    "type": "Personal Project",
+    "languages": ["Python", "JavaScript"],
+    "fields": ["Computer Vision", "Mobile Development"],
+    "description": "Led a team building a mobile app to identify common skin diseases using computer vision.",
+    "bullet_points": [
+      "Led a 12-person team through data collection, model selection, and mobile UI development.",
+      "Built the front-end in React Native and backend endpoints with Flask for model inference.",
+      "Integrated OpenCV and MediaPipe for image preprocessing and landmark detection."
+    ],
+    "date": "Sep 2025 to Dec 2025",
+    "affiliation": "SIGAIDA at UIUC",
+    "frameworks_used": ["React Native", "Flask", "OpenCV", "MediaPipe"],
+    "links": {
+      "github": ""
+    }
+  },
+  {
+    "id": "data_dive_comp",
+    "title": "Data Dive Competition – 2nd Place",
+    "subheading": "Illinois Data Science Club · Urbana-Champaign, IL",
     "type": "Award",
-    "languages": ["C++", "Java"],
-    "fields": ["Algorithms", "Competitive Programming"],
-    "date": "2023-12-05"
+    "languages": ["Python"],
+    "fields": ["Data Science", "Machine Learning", "LLMs"],
+    "description": "Built an AI tool to provide feedback on oral presentations; placed 2nd out of 50 teams.",
+    "bullet_points": [
+      "Designed 'Leo', a feedback system utilizing gaze-tracking and LLM-based analysis for presentations.",
+      "Implemented gaze-tracking using pretrained CNNs and used LLM embeddings for emotion/context analysis.",
+      "Coordinated dataset creation and prototype evaluation across multiple cohorts."
+    ],
+    "date": "Nov 2025 to Dec 2025",
+    "affiliation": "Illinois Data Science Club",
+    "frameworks_used": ["Pretrained CNNs", "Vector DB tooling", "LLM embeddings"],
+    "links": {
+      "github": "",
+      "demo": ""
+    }
+  },
+  {
+    "id": "agentic_healthcare",
+    "title": "Agentic Healthcare AI Developer",
+    "subheading": "RAG at UIUC · Urbana-Champaign, IL",
+    "type": "Personal Project",
+    "languages": ["Python"],
+    "fields": ["LLMs", "Information Retrieval", "Healthcare AI"],
+    "description": "Built an agentic system to retrieve cited medical information and generate preliminary diagnoses.",
+    "bullet_points": [
+      "Created a Selenium-based scraper to gather source documents from MSDManual and other references.",
+      "Built a retrieval+LLM pipeline (BART & vector encoding) to provide cited, context-aware responses.",
+      "Validated retrieval quality and citation accuracy for downstream LLM prompting."
+    ],
+    "date": "Sep 2025 to Dec 2025",
+    "affiliation": "RAG at UIUC",
+    "frameworks_used": ["Selenium", "HuggingFace (BART)"],
+    "links": {
+      "github": ""
+    }
   }
 ]

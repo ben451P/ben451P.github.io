@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import logo from '../static/assets/images/logo.svg';
+import contactImage from '../static/assets/images/contact.jpg'
 import mainStyle from '../static/assets/css/main.module.css'
 
 import MainNavbar from "../components/mainNavbar";
@@ -15,7 +15,7 @@ function ContactPage() {
 
             <ImgDesc
                 title="Contact Information"
-                logo={logo}
+                logo={contactImage}
                 imgSide="left"
             >
                 <div className="fs-4 mb-4">
@@ -24,13 +24,13 @@ function ContactPage() {
                 
                 <ul className="fs-5">
                     <li className="mb-3">
-                        <span className="fw-bold">Phone Number:</span> 201-702-9959
+                        <span className={`fw-bold ${mainStyle.textPrimary}`}>Phone Number:</span> 201-702-9959
                     </li>
                     <li className="mb-3">
-                        <span className="fw-bold">Phone Number:</span> 201-702-9959
+                        <span className={`fw-bold ${mainStyle.textPrimary}`}>Work Email:</span> benlozzano@gmail.com
                     </li>
                     <li className="mb-3">
-                        <span className="fw-bold">Phone Number:</span> 201-702-9959
+                        <span className={`fw-bold ${mainStyle.textPrimary}`}>School Email:</span> lozzano2@illinois.edu
                     </li>
                 </ul>
                 

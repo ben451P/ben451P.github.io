@@ -1,17 +1,5 @@
 import { useMemo, useState, useEffect } from "react";
 
-const MAJOR_LANGUAGES = [
-  "JavaScript",
-  "TypeScript",
-  "Python",
-  "Java",
-  "C++",
-  "Go",
-  "Rust",
-  "C#",
-  "Ruby",
-];
-
 const ALLOWED_TYPES = [
   "Internship",
   "Research",
@@ -36,7 +24,7 @@ export default function useExperienceFilters(items) {
 
     items.forEach((it) => {
       (it.languages || []).forEach((l) => {
-        if (MAJOR_LANGUAGES.includes(l)) langs.add(l);
+        langs.add(l);
       });
       (it.fields || []).forEach((f) => fields.add(f));
     });
@@ -93,16 +81,24 @@ export default function useExperienceFilters(items) {
       .filter(Boolean);
 
     filtered.sort((a, b) => {
-      const ta = a.date ? new Date(a.date).getTime() : 0;
-      const tb = b.date ? new Date(b.date).getTime() : 0;
-      return tb - ta;
+      const getEndTime = (item) => {
+        if (!item.date) return 0;
+
+        // "Sep 2025 to Dec 2025" → "Dec 2025"
+        const end = item.date.split(" to ")[1] ?? item.date;
+
+        // Force day = 1 for consistent parsing
+        return new Date(`${end} 1`).getTime();
+      };
+
+      return getEndTime(b) - getEndTime(a);
     });
+
 
     return filtered;
   }, [items, query, selectedTypes, selectedLangs, selectedFields]);
 
   useEffect(() => {
-    console.log("s");
     const searchParamsStr = sessionStorage.getItem("searchParams");
     
     if (!searchParamsStr) return;

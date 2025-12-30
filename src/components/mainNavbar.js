@@ -29,9 +29,9 @@ const MainNavbar = () => {
                     <li className="nav-item">
                         <a className={`nav-link ${mainStyle.componentSecondary}`} href="/search">Experiences</a>
                     </li>
-                    <li className="nav-item">
+                    {/* <li className="nav-item">
                         <a className={`nav-link ${mainStyle.componentSecondary}`} href="/hobbies">Hobbies</a>
-                    </li>
+                    </li> */}
                     <li className="nav-item">
                         <a className={`nav-link ${mainStyle.componentSecondary}`} href="/contact">Contact</a>
                     </li>
